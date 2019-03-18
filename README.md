@@ -1,8 +1,8 @@
 ## Voyager
 
-(this is a patched version making a dropdown menu below the site title containing all posts).
+This is a patched version making a dropdown menu below the site title containing all posts.
 
-Just another jekyll theme. Demo: <http://redvi.github.io/voyager>
+Just another jekyll theme. Demo: <https://littlefox94.github.io/voyager-posts-dropdown>. Original version at https://github.com/redVi/voyager
 
 ### Feathures:
 
