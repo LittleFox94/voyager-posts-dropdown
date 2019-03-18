@@ -4,7 +4,15 @@
 
   <nav class="center-wrapper nav-main">
 
-    <a class="blog-logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <div class="posts-dropdown">
+      <a class="blog-logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+      <ul>
+        {% for post in site.posts %}
+          <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
 
     {% for my_page in site.pages %}
       {% if my_page.active %}

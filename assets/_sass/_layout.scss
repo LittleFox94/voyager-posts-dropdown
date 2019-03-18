@@ -102,6 +102,42 @@ a {
   font-family: "Roboto Condensed", sans-serif;
   padding: 0 1rem;
   text-transform: uppercase;
+
+  .posts-dropdown {
+    max-height: 3em;
+    overflow: hidden;
+
+    ul {
+      position: relative;
+      z-index: 999;
+      padding: 0;
+      margin: 0;
+
+      list-style: none;
+      background: white;
+      border:     1px solid #ddd;
+
+      li {
+        height: 3em;
+        line-height: 3em;
+        font-size: 1em;
+        padding-left: 1em;
+
+        &:hover {
+          background: #f0f0f0;
+        }
+      }
+    }
+
+    &:hover {
+      max-height: inherit;
+
+      ul {
+        display: block;
+      }
+    }
+  }
+
   a {
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -192,6 +228,7 @@ a {
 * ========================================================================== */
 main {
   padding-top: 3em;
+  z-index: 1;
 }
 
 .index-page {
